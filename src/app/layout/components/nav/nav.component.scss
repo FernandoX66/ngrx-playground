@@ -19,9 +19,20 @@
       display: flex;
       gap: 20px;
 
-      li:hover {
-        color: crimson;
-        cursor: pointer;
+      li {
+        a {
+          text-decoration: none;
+          color: $black;
+
+          &:hover {
+            color: crimson;
+            cursor: pointer;
+          }
+        }
+
+        .active-link {
+          color: crimson;
+        }
       }
     }
   }

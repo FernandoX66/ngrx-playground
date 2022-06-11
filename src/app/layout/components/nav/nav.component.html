@@ -3,9 +3,13 @@
     <h3>Cookies</h3>
     <nav>
       <ul>
-        <li><a>Home</a></li>
-        <li><a>Ingredients</a></li>
-        <li><a>Recipes</a></li>
+        <ng-container *ngFor="let option of navOptions">
+          <li>
+            <a [routerLink]="option.path" routerLinkActive="active-link">
+              {{ option.name }}
+            </a>
+          </li>
+        </ng-container>
       </ul>
     </nav>
     <div class="buttons-container">
