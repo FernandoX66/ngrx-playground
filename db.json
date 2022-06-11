@@ -2,14 +2,20 @@
   "ingredients": [
     {
       "name": "Tomato",
+      "description": "A fresh red tomato",
+      "image": "https://i.ibb.co/hXC2nft/tomato.png",
       "id": 1
     },
     {
       "name": "Onion",
+      "description": "A purple onion",
+      "image": "https://i.ibb.co/tczkjxt/purple-onion.png",
       "id": 2
     },
     {
       "name": "Cheese",
+      "description": "A slice of cheese",
+      "image": "https://i.ibb.co/3k38chq/cheese.png",
       "id": 3
     }
   ]
