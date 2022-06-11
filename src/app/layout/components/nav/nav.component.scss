@@ -1,0 +1,50 @@
+@import "colors";
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 95%;
+  margin: 0 auto;
+
+  h3 {
+    font-size: 20px;
+    color: crimson;
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+
+      li:hover {
+        color: crimson;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    button {
+      border: none;
+      padding: 7px 14px;
+      border-radius: 4px;
+      font-family: inherit;
+
+      &:last-child {
+        background-color: crimson;
+        color: $white;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "ingredients": [
+    {
+      "name": "Tomato",
+      "id": 1
+    },
+    {
+      "name": "Onion",
+      "id": 2
+    },
+    {
+      "name": "Cheese",
+      "id": 3
+    }
+  ]
+}
