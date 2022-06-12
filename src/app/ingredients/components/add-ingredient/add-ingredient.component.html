@@ -1,0 +1,32 @@
+<section>
+  <form [formGroup]="form" (ngSubmit)="addIngredient()">
+    <fieldset>
+      <label for="name">Name:</label>
+      <input
+        formControlName="name"
+        id="name"
+        type="text"
+        placeholder="Enter ingredient's name"
+      />
+    </fieldset>
+    <fieldset>
+      <label for="description">Description:</label>
+      <input
+        formControlName="description"
+        id="description"
+        type="text"
+        placeholder="Enter ingredient's description"
+      />
+    </fieldset>
+    <fieldset>
+      <label for="image">Image (optional):</label>
+      <input
+        formControlName="image"
+        id="iname"
+        type="text"
+        placeholder="Enter ingredient's image"
+      />
+    </fieldset>
+    <button type="submit" [disabled]="form.invalid">Add Ingredient</button>
+  </form>
+</section>

@@ -1,13 +1,18 @@
-<div class="ingredients-container">
-  <div class="ingredient" *ngFor="let ingredient of ingredients$ | async">
-    <img
-      *ngIf="ingredient.image"
-      src="{{ ingredient.image }}"
-      alt="{{ ingredient.name }}"
-    />
-    <p>
-      <span>{{ ingredient.name }}</span>
-    </p>
-    <p>{{ ingredient.description }}</p>
+<section>
+  <div class="button-container">
+    <button routerLink="add">+ Add Ingredient</button>
   </div>
-</div>
+  <div class="ingredients-container">
+    <div class="ingredient" *ngFor="let ingredient of ingredients$ | async">
+      <img
+        *ngIf="ingredient.image"
+        src="{{ ingredient.image }}"
+        alt="{{ ingredient.name }}"
+      />
+      <p>
+        <span>{{ ingredient.name }}</span>
+      </p>
+      <p>{{ ingredient.description }}</p>
+    </div>
+  </div>
+</section>

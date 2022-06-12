@@ -7,14 +7,17 @@ import { StoreModule } from '@ngrx/store';
 import { ingredientsReducer } from './store/ingredients.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { IngredientsEffects } from './store/ingredients.effects';
+import { AddIngredientComponent } from './components/add-ingredient/add-ingredient.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [IngredientsComponent],
+  declarations: [IngredientsComponent, AddIngredientComponent],
   imports: [
     CommonModule,
     IngredientsRoutingModule,
     StoreModule.forFeature('ingredients', ingredientsReducer),
     EffectsModule.forFeature([IngredientsEffects]),
+    ReactiveFormsModule,
   ],
   providers: [IngredientsService],
 })

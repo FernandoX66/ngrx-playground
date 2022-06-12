@@ -22,5 +22,12 @@ export const ingredientsReducer = createReducer<IngredientsState>(
     (state, action): IngredientsState => {
       return { ...state, ingredients: action.ingredients };
     }
+  ),
+  on(
+    IngredientsApiActions.addIngredientsSuccess,
+    (state, action): IngredientsState => {
+      const updatedIngredients = [...state.ingredients, action.ingredient];
+      return { ...state, ingredients: updatedIngredients };
+    }
   )
 );

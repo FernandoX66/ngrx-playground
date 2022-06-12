@@ -1,5 +1,23 @@
 @import "colors";
 
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+
+  button {
+    border: none;
+    font-family: inherit;
+    padding: 7px 20px;
+    border-radius: 5px;
+    background-color: $yellow;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
 .ingredients-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -10,6 +28,7 @@
     border-radius: 5px;
     padding: 10px;
     background-color: $white;
+    animation: enterscale 0.2s ease-in-out;
 
     img {
       max-width: 100%;
@@ -22,6 +41,18 @@
         font-weight: bold;
         font-size: 15px;
       }
+    }
+  }
+
+  @keyframes enterscale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
     }
   }
 }

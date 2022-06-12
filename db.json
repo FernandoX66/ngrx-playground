@@ -17,6 +17,18 @@
       "description": "A slice of cheese",
       "image": "https://i.ibb.co/3k38chq/cheese.png",
       "id": 3
+    },
+    {
+      "name": "Potato",
+      "description": "Some fresh potatoes",
+      "image": "https://i.ibb.co/JdS3dDW/potato.png",
+      "id": 4
+    },
+    {
+      "name": "Carrot",
+      "description": "A delicious set of carrots",
+      "image": "https://i.ibb.co/SPFnghw/carrot.png",
+      "id": 5
     }
   ]
 }

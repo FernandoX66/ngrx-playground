@@ -9,3 +9,12 @@ export const loadIngredientsSuccess = createAction(
 export const loadIngredientsFailed = createAction(
   '[Ingredients Api] Load Ingredients Failed'
 );
+
+export const addIngredientsSuccess = createAction(
+  '[Ingredients Api] Add Ingredients Success',
+  props<{ ingredient: Ingredient }>()
+);
+
+export const addIngredientsFailed = createAction(
+  '[Ingredients Api] Add Ingredients Failed'
+);
