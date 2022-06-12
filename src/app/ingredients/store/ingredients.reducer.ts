@@ -29,5 +29,14 @@ export const ingredientsReducer = createReducer<IngredientsState>(
       const updatedIngredients = [...state.ingredients, action.ingredient];
       return { ...state, ingredients: updatedIngredients };
     }
+  ),
+  on(
+    IngredientsApiActions.updateIngredientsSuccess,
+    (state, action): IngredientsState => {
+      const updatedIngredients = state.ingredients.map((ingredient) =>
+        ingredient.id === action.ingredient.id ? action.ingredient : ingredient
+      );
+      return { ...state, ingredients: updatedIngredients };
+    }
   )
 );

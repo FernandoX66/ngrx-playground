@@ -9,3 +9,8 @@ export const addIngredient = createAction(
   '[Ingredients Page] Add Ingredient',
   props<{ ingredient: Ingredient }>()
 );
+
+export const updateIngredient = createAction(
+  '[Ingredients Page] Update Ingredient',
+  props<{ ingredient: Ingredient }>()
+);

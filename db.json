@@ -29,6 +29,18 @@
       "description": "A delicious set of carrots",
       "image": "https://i.ibb.co/SPFnghw/carrot.png",
       "id": 5
+    },
+    {
+      "name": "Sugar",
+      "description": "Some delicious sugar",
+      "image": "https://i.ibb.co/R3dBMKf/sugar.png",
+      "id": 6
+    },
+    {
+      "name": "Flour",
+      "description": "Some flour for baking",
+      "image": "https://i.ibb.co/BTV3dBr/Harina.png",
+      "id": 7
     }
   ]
 }

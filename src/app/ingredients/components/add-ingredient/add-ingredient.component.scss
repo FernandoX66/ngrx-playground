@@ -23,6 +23,7 @@ section {
         width: 100%;
         padding: 9px;
         font-family: inherit;
+        font-size: 13px;
         border-radius: 5px;
         border: 1px solid #ccc;
         outline: none;
@@ -36,15 +37,19 @@ section {
     button {
       margin-top: 5px;
       width: 100%;
-      max-width: 120px;
+      max-width: 140px;
       padding: 7px 10px;
       font-family: inherit;
+      font-weight: bold;
+      color: $black;
+      font-size: 13px;
       border: none;
       background-color: $yellow;
       border-radius: 5px;
 
       &[disabled] {
         background-color: rgb(235, 235, 235);
+        color: #cccccc;
 
         &:hover {
           cursor: default;

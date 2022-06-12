@@ -32,12 +32,26 @@ export class IngredientsEffects {
   addIngredient$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(IngredientsPageActions.addIngredient),
-      switchMap((action) => {
+      mergeMap((action) => {
         return this.ingredientsService.addIngredient(action.ingredient).pipe(
           map((ingredient) =>
             IngredientsApiActions.addIngredientsSuccess({ ingredient })
           ),
           catchError(() => of(IngredientsApiActions.addIngredientsFailed()))
+        );
+      })
+    );
+  });
+
+  updateIngredient$ = createEffect(() => {
+    return this.actions$.pipe(
+      ofType(IngredientsPageActions.updateIngredient),
+      switchMap((action) => {
+        return this.ingredientsService.updateIngredient(action.ingredient).pipe(
+          map((ingredient) =>
+            IngredientsApiActions.updateIngredientsSuccess({ ingredient })
+          ),
+          catchError(() => of(IngredientsApiActions.updateIngredientsFailed()))
         );
       })
     );

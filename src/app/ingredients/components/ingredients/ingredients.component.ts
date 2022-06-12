@@ -13,6 +13,7 @@ import { getIngredients } from '../../store/ingredients.selectors';
 })
 export class IngredientsComponent implements OnInit {
   ingredients$: Observable<Ingredient[]>;
+  placeholderImageUrl = 'https://i.ibb.co/fv6N6NW/gallery.png';
 
   constructor(private store: Store<AppState>) {}
 
